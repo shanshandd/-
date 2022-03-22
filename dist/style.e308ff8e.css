@@ -1,0 +1,166 @@
+*{
+    margin:0;padding: 0;box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+input[type="text"],button{
+    border:none
+}
+body{
+    background-color: #eee;
+    
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.navGlobal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+.hide{
+    display: none;
+}
+/* 如何设置两个的长度，高度，对齐方式*/
+/* .navHeader{
+    position: fixed;
+    left:50%;top:0;
+    z-index: 1;
+    background-color: #eee;
+    transform: translateX(-50%);
+} */
+
+.navHeader form{
+    height: 42px;
+    margin:25px 10px;
+    max-width:300px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:auto;
+    margin-right: auto;
+}
+.navHeader .searchTxt{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height:42px;
+    font-size: 18px;
+    padding-left: 10px;
+    width: 100%;
+    margin-right:10px
+}
+.navHeader button{
+    color:white;
+    background-color:#4577C1;
+    padding:10px 15px;
+    min-width: 60px;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+    /* white-space: nowrap;
+    padding: 0 28px; */
+}
+.navBody{
+    overflow-y: auto;
+    margin-left:20px;
+    margin-right:20px;
+}
+.navBody .siteList{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.siteList .site{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    background-color: #fff;
+    margin-right:10px;
+    margin-top:10px;
+}
+.site .edit{
+    text-align: right;
+    visibility: hidden;
+}
+.site:hover .edit{
+    visibility: visible;
+}
+.siteList .site:not(:last-child):hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.site .logo, .add{
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    font-size: 68px;
+    margin:10px 40px 10px;
+    text-align: center;
+}
+.site .url{
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 120px;
+    overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+.addText{
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.site{
+    position: relative;
+}
+.mask{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;height:100%;
+    background-color: black;
+    opacity: 0.9;
+}
+.delete{
+    position: absolute;
+    left:50%;top:50%;
+    transform: translate(-50%,-50%);
+    width:60px;height:40px;border-radius: 6px ;
+    font-size:18px;
+    background-color: #4577C1;
+    color:white
+}
+@media  screen and (min-width: 500px) {
+    .navHeader{
+        margin-top:50px;
+        margin-bottom: 30px;
+    }
+    .navHeader form{
+        max-width:400px;
+    }
+    .navBody{
+        max-width: 900px;
+        margin-left:auto;
+        margin-right:auto;
+        overflow-y: initial;
+    }
+    .navBody .siteList{
+        justify-content: flex-start;
+        margin-right: -25px;
+    }
+    .navBody .siteList .site{
+        margin-right:25px
+    }
+    .add{
+        margin-top:30px
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
