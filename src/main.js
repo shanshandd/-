@@ -1,5 +1,9 @@
 
-let hashMAp = JSON.parse(localStorage.getItem('siteMap') || '[]');
+let hashMAp = JSON.parse(localStorage.getItem('siteMap')) ||
+    [
+        { logo: "G", url: "https://google.com" },
+        { logo: "J", url: "https://juejin.cn" }
+    ];
 let $liList = $('.siteList');
 let isTouchDevice = 'ontouchstart' in document.documentElement; //true 为移动端
 
