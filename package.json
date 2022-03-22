@@ -1,0 +1,20 @@
+{
+  "name": "nav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanshandd/-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanshandd/-/issues"
+  },
+  "homepage": "https://github.com/shanshandd/-#readme"
+}
