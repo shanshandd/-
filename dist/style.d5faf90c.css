@@ -9,7 +9,13 @@ input[type="text"],button{
 }
 body{
     background-color: #eee;
-    
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
 body,html{
     width: 100%;
@@ -163,4 +169,4 @@ body,html{
     }
 }
 
-/*# sourceMappingURL=/style.e308ff8e.css.map */
+/*# sourceMappingURL=style.d5faf90c.css.map */
